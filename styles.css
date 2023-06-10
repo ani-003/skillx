@@ -24,12 +24,8 @@ body {
   align-items: stretch;
 }
 
-header hr {
-  color: #17202A;
-  width: 100%;
-}
-
 header {
+  width: 100%;
   letter-spacing: 6px;
   font-family: 'Cutive Mono', monospace;
   font-size: 2vw;
@@ -40,14 +36,12 @@ header {
   padding: 6vw 0;
   line-height: 1.5;
   position: relative;
+  margin-bottom: 15px;
 }
-
-
 
 .get-started-button {
   position: absolute;
   top: 100%;
-  /* Position the button below the header text */
   left: 50%;
   transform: translate(-50%, -50%);
   display: inline-block;
@@ -58,22 +52,6 @@ header {
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s ease;
-
-
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    /* Adjust button size for smaller screens */
-    padding: 8px 12px;
-    font-size: 16px;
-  }
-
-  @media (max-width: 480px) {
-    /* Adjust button size and position for even smaller screens */
-    padding: 4px 10px;
-    font-size: 12px;
-    
-  }
-  
 }
 
 .get-started-button:hover {
@@ -84,34 +62,12 @@ header {
   position: absolute;
   top: 15px;
   left: 15px;
-  width: 60px; /* Set the desired width */
-  height: 25px; /* Set the desired height */
+  width: 60px;
+  height: 25px;
   background-image: url('./bliss.png');
   background-size: cover;
   transition: transform 0.3s ease;
 }
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  /* Adjust logo size for smaller screens */
-  .logo {
-    width: 40px;
-    height: 16px;
-    top: 12px;
-    left: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Further adjust logo size for even smaller screens */
-  .logo {
-    width: 30px;
-    height: 12px;
-    top: 10px;
-    left: 10px;
-  }
-}
-
 
 .logo:hover {
   transform: scale(1.1);
@@ -119,33 +75,66 @@ header {
 }
 
 .main-part {
-
   height: 3000px;
   width: 100%;
   position: relative;
-
 }
 
 .image-back {
+  height: 700px;
+  width: 240px;
+  background-color: #008080;
+  border: #17202A;
+  position: absolute;
+  top: 30px;
+  right: 8%;
+  z-index: 1;
+}
+
+.image-container {
+  top: 2.5%;
+  left: 920px;
+  width: 300px;
+  height: 380px;
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2), 2px 0 4px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  position: absolute;
+  background-image: url('./aroma.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.image-back1 {
   height: 300px;
   width: 300px;
   background-color: #008080;
   border: #17202A;
   position: absolute;
-  top: 30px;
-  /* Adjust the top value to move the image vertically */
-  right: 60px;
-  /* Adjust the left value to move the image horizontally */
+  top: 50px;
+  left: 300px;
   z-index: 1;
-
-
 }
-.image-container {
-  /*position: relative; /* Change the positioning to relative */
-  top: 45px;
-  /* Adjust the top value to move the image vertically */
+
+.image-container1 {
+  top: 3.2%;
+  left: 10%;
+  width: 600px;
+  height: 450px;
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2), 2px 0 4px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  position: absolute;
+  background-image: url('./meditation.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+
+
+.image-container2{
+  top: 480px;
   left: 920px;
-  /* Adjust the left value to move the image horizontally */
   width: 300px;
   height: 380px;
   box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2), 2px 0 4px 0 rgba(0, 0, 0, 0.2);
@@ -155,40 +144,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 2;
-  
 }
-
-.image-back1 {
-  height: 300px;
-  width: 300px;
-  background-color: #008080;
-  border: #17202A;
-  position: absolute;
-  top: 30px;
-  /* Adjust the top value to move the image vertically */
-  left: 300px;
-  /* Adjust the left value to move the image horizontally */
-  z-index: 1;
-}
-
-.image-container1 {
-  /*position: relative; /* Change the positioning to relative */
-  top: 2.5%;
-  /* Adjust the top value to move the image vertically */
-  left: 10%;
-  /* Adjust the left value to move the image horizontally */
-  width: 600px;
-  height: 450px;
-  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2), 2px 0 4px 0 rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-  position: absolute;
-  background-image: url('./exercise.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 2;
-}
-
-
 
 footer {
   background-color: #17202A;
@@ -201,7 +157,6 @@ footer {
   flex-shrink: 0;
   margin-top: auto;
 }
-
 
 footer p {
   font-size: 10px;
@@ -237,4 +192,66 @@ footer p {
   margin-left: 10px;
   text-decoration: none;
   font-size: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header {
+    font-size: 2vw;
+
+  }
+
+  .get-started-button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 16px;
+    top: 12px;
+    left: 12px;
+  }
+
+  .image-container {
+    left: 10px;
+  }
+
+  .image-container1 {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 2vw;
+    padding: 8vw 0;
+  }
+
+  .get-started-button {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+
+  .logo {
+    width: 30px;
+    height: 12px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .image-container {
+    left: 10px;
+  }
+
+  .image-container1 {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    display: none;
+  }
 }
