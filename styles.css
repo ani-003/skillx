@@ -12,6 +12,7 @@ li {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -86,7 +87,7 @@ header {
   background-color: #008080;
   border: #17202A;
   position: absolute;
-  top: 30px;
+  top: 1.7%;
   right: 8%;
   z-index: 1;
 }
@@ -146,10 +147,7 @@ header {
   z-index: 2;
 }
 
-.ruler{
-  margin-top: 50%;
-  color: #17202A;
-}
+
 
 .text-back {
   height: 150px;
@@ -172,7 +170,7 @@ header {
   border: #17202A;
   position: absolute;
   top: 20%;
-  left: 14.5%;
+  left: 14%;
   color : #FFFFFF;
   font-size: 1.8vw;
   padding: 10px; 
@@ -180,35 +178,155 @@ header {
   box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2), 2px 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-/*.text-back1 {
-  height: 150px;
-  width: 100px;
-  background-color: #008080;
-  border: #17202A;
+
+.illus-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 20%;
-  left: 30%;
+  top: 32%;
+  left: 0;
+  right: 0;
   z-index: 1;
-}*/
+  height: 6%;
+  width: 100%;
+}
 
-
-
-/*.text-container1 {
-  font-family: 'Cutive Mono', monospace;
-  height: 200px;
-  width: 200px;
-  background-color: #3f7beb;
-  border: #17202A;
-  position: absolute;
-  top: 21%;
-  left: 30%;
-  color : #FFFFFF;
-  font-size: 1.65vw;
-  padding: 10px; 
+.illus-back {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  width: 90%;
+  background-color: rgba(0, 128, 128, 0.5);
+  position: relative;
+  margin: 0 auto;
+  border-radius: 10px;
   z-index: 2;
-}*/
+}
 
+.illus {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2), 2px 0 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #3f7beb;
+  margin-right: 20px;
+}
 
+.illus1{
+margin-left: 10%;
+background-image: url("./dumbbells.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.illus2{
+background-image: url("./headphone.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.illus3{
+  margin-right: 10%;
+  background-image: url("./rasberry.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.calcu-text-box-back {
+  display: flex;
+  justify-content: center; /* Horizontally center the child elements */
+  align-items: center; /* Vertically center the child elements */
+  position: absolute;
+  top: 42%;
+  left: 0;
+  right: 0;
+  height: 12%;
+  width: 100%;
+}
+
+.calcu-text-border {
+  display: flex;
+  justify-content: center; /* Horizontally center the content within calcu-text-border */
+  /*align-items: center; /* Vertically center the content within calcu-text-border */
+  position: relative;
+  z-index: 1;
+  height: 90%;
+  width: 90%;
+  border: 1px solid #969696;
+  color: #FFFFFF;
+  border-radius: 10px; /* Adjust the border-radius value as per your preference */
+  
+}
+
+.calcu-box-back {
+
+  height: 16%;
+  width: 10%;
+  background-color: #008080;
+  
+  position: absolute;
+  
+  z-index: 1;
+}
+
+.box1{
+  top: 1.7%;
+  left: 8%;
+}
+
+.box2{
+  top: 1.7%;
+  left: 36.5%;
+}
+
+.calcu-text-box {
+  border: 1px solid #ccc;
+  position: absolute;
+  width: 20%;
+  height: 65%;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.8vw;
+  padding: 20px;
+  background-color: #3f7beb;
+  top: 12%;
+  left: 2%;
+  z-index: 2;
+  border: #17202A;
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2), 2px 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.calculator-container {
+  top: 12%;
+  left: 30%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 20%;
+  height: 65%;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1.8vw;
+  background-color: #3f7beb;
+  z-index: 2;
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2), 2px 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bmi-calculator {
+  text-align: center;
+}
+
+button {
+  margin-top: 2.5%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 
 
